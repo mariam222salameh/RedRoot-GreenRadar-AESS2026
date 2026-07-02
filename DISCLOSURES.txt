@@ -1,1 +1,39 @@
+================================================================
+AI / External Resource Disclosure
+RedRoot — Green Radar Flood Detection
+AESS Sustainability Hackathon 2026 · Challenge 2 · Final Phase
+================================================================
 
+1. Software Libraries (used in the core simulation)
+- numpy: Numerical arrays, FFT, signal generation.
+- scipy: Cosine-distance anomaly scoring (scipy.spatial.distance.cosine).
+- matplotlib: All six validation plots.
+All three are open-source, standard scientific Python libraries; no proprietary or paid dependencies are used in redroot_simulation.py.
+
+2. External Data / Standards Referenced
+- IEA Emissions Factors Database, 2023 Edition: Egyptian grid carbon intensity constant (0.233 kg CO₂/kWh) used in the CDD metric.
+No other external datasets are used — all radar returns, flood-intensity curves, and sensor signals in the simulation are synthetically generated within the script itself (deterministic, seed = 42), not sourced from a real dataset.
+
+3. Platforms Used to Build Project Assets
+- Lovable (lovable.app): Built the project website / live-demo dashboard (redroot-green-radar.lovable.app).
+
+4. AI Assistance Disclosure
+AI assistance (Google Gemini, Anthropic Claude) was used during the project lifecycle for the following, all derived from and checked against the team's own redroot_simulation.py code and its actual terminal output:
+- Code structure refinement and optimization.
+- Drafting and formatting the repository README.md.
+- Drafting the one-page Final Evidence Sheet.
+- Drafting this disclosure file.
+
+Review note: An earlier AI-assisted document (working title: "RedRoot Green Radar — Sustainable Cognitive Radar Validation Report") was produced during drafting and found on review to contain hardware specifications, TinyML performance figures, and accuracy/precision statistics that do not correspond to anything implemented in the team's actual codebase. That document was not included in the final submission in its original form. It was revised into a "Design Feasibility & Literature Grounding Report" — explicitly reframed and relabeled as a forward-looking literature review supporting the project's future roadmap (on-device TinyML compression, physical hardware deployment), not as a report of measured or validated results. Every figure in that document is now labeled "Design Target" rather than "Assigned Value," and the document states plainly that it is not a validation report. The team's only validated, reproducible results are those in redroot_simulation.py's single 24-hour simulation.
+
+5. Datasheets and Literature Cited in Supporting Documentation
+The following are cited as background/context in the team's "Design Feasibility & Literature Grounding Report" to support the technical plausibility of future (not-yet-built) hardware components:
+- Infineon Technologies AG, "BGT24MTR12 — Single-Chip 24 GHz FMCW Radar Transceiver," Datasheet v2.0, 2014.
+- STMicroelectronics, "STM32H742xI/G and STM32H743xI/G Datasheet DS12110," 2023.
+- International Energy Agency (IEA), "Emissions Factors Database — 2023 Edition," 2023.
+- S. Haykin, "Cognitive radar: A way of thinking," IEEE Signal Processing Magazine, 2006.
+
+6. What Was Not Used
+- No proprietary or licensed datasets.
+- No pretrained third-party ML models.
+- No code copied from external repositories — redroot_simulation.py is original to the team.
