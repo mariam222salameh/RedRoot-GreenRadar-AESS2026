@@ -1,29 +1,34 @@
-# RedRoot-GreenRadar-AESS2026
-Green Radar: Sustainable Flood Detection System
+RedRoot: Sustainable Cognitive Radar for Flood Detection
+IEEE AESS Sustainability Hackathon 2026 | Challenge 2
+
 🌟 Overview
-Green Radar is a sophisticated monitoring solution designed to tackle the challenges of flood management. Developed for the IEEE AESS Sustainability Hackathon 2026, this project integrates TinyML (Tiny Machine Learning) and radar data processing to detect water level anomalies with high precision and low power consumption.
+RedRoot is an intelligent, low-power radar monitoring system designed for autonomous flood detection. This project demonstrates a high-fidelity simulation of a cognitive radar system that optimizes energy consumption and spectrum usage through real-time environmental awareness.
+
+This repository provides a verifiable simulation environment that validates the core logic of the RedRoot system, proving significant sustainability gains compared to conventional, always-on radar architectures.
 
 🚀 Key Features
-TinyML Inference: Runs efficient machine learning models on edge devices for real-time flood prediction.
+Cognitive Processing: Features a System Intelligence Score (SIS) engine that adapts radar parameters dynamically based on environmental data.
 
-Sustainability Focus: Optimized for low energy consumption using duty-cycling techniques.
+Sustainability Focus: Drastically reduces energy consumption through intelligent duty-cycling, avoiding congested frequency bands.
 
-Radar Data Processing: Utilizes radar signal analysis to ensure accuracy in various weather conditions.
+Validated Simulation: Includes a robust 24-hour flood event simulation that serves as the primary proof-of-concept for the project's energy and carbon-saving claims.
 
-Real-time Visualization: Generates comprehensive plots for range profiles, energy bandwidth, and spectrum analysis.
+Data-Driven Insights: Generates a comprehensive suite of analytical plots covering range profiles, power consumption, spectrum avoidance, and carbon accountability.
 
-📊 Technical Results
-The repository includes several simulation plots that demonstrate the system's performance:
+📊 Performance Metrics (Verified 24h Simulation)
+The following results are derived from the execution of the provided redroot_simulation.py script:
 
-Range Profile: Measures the distance and detection accuracy.
+Energy Savings: 87.7% reduction compared to conventional always-on radar.
 
-Energy & Duty Cycle: Showcases the power efficiency of the system.
+Carbon Accountability: 8× reduction in Carbon Debt per Detection (CDD).
 
-Spectrum Analysis: Visualizes the signal processing capabilities.
+Spectrum Efficiency: 100% avoidance rate during simulated congested intervals.
+
+Note on Project Scope: The performance metrics above are based on the validated 24-hour simulation code provided in this repository. Additional 11-day performance projections are documented in the project's Design Feasibility & Literature Grounding Report as theoretical design targets for future hardware/TinyML deployment and are not measured results of the current codebase.
 
 🛠 Tech Stack
 Language: Python
 
-Libraries: NumPy, Matplotlib, TensorFlow/Lite (for TinyML).
+Core Libraries: numpy, scipy, matplotlib
 
-Hardware Simulation: Advanced radar signal modeling.
+Methodology: High-fidelity radar signal modeling and energy ledger simulation.
