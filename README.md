@@ -53,9 +53,8 @@ The following results are derived from execution of the provided `redroot_simula
   Demonstrates execution of the validated 24-hour simulation (`redroot_simulation.py`) and generation of the performance analytical plots.
 - 🌐 **Live Demo Dashboard:** https://redroot-green-radar.lovable.app
   Reflects the same audited headline figures as this README (87.7% energy reduction, 8× CDD improvement, 100% spectrum avoidance). Two supplementary metrics on the dashboard — the TinyML per-inference energy figure and "Peak Flood Power Saved" — are still being reconciled against the simulation code and should not yet be treated as audited.
-- 📄 **Design Feasibility & Literature Grounding Report:** https://drive.google.com/file/d/1T5TwfE90mhCwXgftHDWfBzxh1PtTu3qz/view
+- 📄 **Design Feasibility & Literature Grounding Report:** https://drive.google.com/file/d/1T5TwfE90mhCwXgftHDWfBzxh1PtTu3qz/view?usp=sharing
   Contains theoretical projections and design targets for an 11-day operation scenario — distinct from the validated 24-hour simulation results presented in this repository.
-
 ---
 
 ## AI usage disclosure
