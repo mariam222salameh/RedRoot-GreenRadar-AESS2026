@@ -433,10 +433,14 @@ def plot_cdd(ledger):
                  transform=axes[0].transAxes, ha='center',
                  fontsize=12, color='#0F6E56', fontweight='bold')
 
-    # Duty-cycle breakdown pie
-    modes_count = {'Sleep/Green': 0, 'Alert': 0, 'Emergency': 0}
-    # reconstruct from energy ledger approximation
-    axes[1].pie([75, 20, 5],
+   # Duty-cycle breakdown pie — derived from actual logged modes
+    from collections import Counter
+    counts = Counter(logs['mode'])
+    total = sum(counts.values())
+    sleep_green = counts.get('SLEEP', 0) + counts.get('GREEN', 0)
+    alert = counts.get('ALERT', 0)
+    emergency = counts.get('EMERGENCY', 0)
+    axes[1].pie([sleep_green, alert, emergency],
                 labels=['Sleep/Green\n(0–10 mW)', 'Alert\n(100 mW)',
                         'Emergency\n(500 mW)'],
                 colors=['#9FE1CB', '#FAC775', '#F09595'],
